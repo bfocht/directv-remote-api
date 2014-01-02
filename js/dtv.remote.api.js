@@ -275,7 +275,7 @@
         getVersion : function(options) {
             this.makeRequest({
                 path    : '/info/getVersion',
-                options : options,
+                options : options
             });
         },
 

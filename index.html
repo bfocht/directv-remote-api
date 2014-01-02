@@ -7,21 +7,22 @@
   <link rel="stylesheet" href="website/css/bootstrap-responsive.css" type="text/css"/>
 
   <!-- Google Analytics -->
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-28421267-1']);
-    _gaq.push(['_trackPageview']);
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+    ga('create', 'UA-46807717-1', 'pathfindertech.net');
+    ga('send', 'pageview');
+
   </script>
 </head>
 <body data-spy="scroll">
   <!-- GitHub 'Fork Me' Badge -->
-  <a href="https://github.com/whitlockjc/directv-remote-api" class="navbar-fixed-top">
+  <a href="https://github.com/bfocht/directv-remote-api" class="navbar-fixed-top">
     <img src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
   </a>
 
@@ -29,7 +30,7 @@
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
-        <a class="brand" href="http://whitlockjc.github.com/directv-remote-api/">DirecTV Remote API</a>
+        <a class="brand" href="https://github.com/bfocht/directv-remote-api">DirecTV Remote API</a>
         <ul class="nav">
           <li class="active"><a href="#overview">Overview</a></li>
           <li><a href="#about">About</a></li>
@@ -177,7 +178,7 @@
             The <a href="js/examples">example application</a> is a work in progress that will allow you to
             connect to a DirecTV <abbr title="set-top-box">STB</abbr> on your local network and interact with
             it: View information about the currently tuned channel, change channels, see what's currently on
-            other channels and many more.  You can also use the <a href="https://github.com/whitlockjc/directv-remote-api/blob/master/js/test/tests.js">online test suite sources</a>
+            other channels and many more.  You can also use the <a href="js/test/tests.js">online test suite sources</a>
             as a low-level, code-based example on how to use the full JavaScript API.
           </p>
         </div>
